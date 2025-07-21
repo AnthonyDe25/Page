@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+.Anime-1 {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px; /* Aumenta el espacio entre las tarjetas */
+    justify-content: center;
+    max-width: 1200px; /* Ajusta el ancho del contenedor */
+    margin: 50px auto; /* Agrega separación desde la parte superior y centra horizontalmente */
+}
+
+.anime-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1 1 200px; /* Ajusta el tamaño mínimo */
+    max-width: 200px; /* Ajusta el tamaño máximo */
+}
+
+.anime-2 {
+    width: 200px; /* Ajusta el ancho de las imágenes */
+    height: 280px; /* Ajusta la altura de las imágenes */
+    object-fit: cover;
+    border-radius: 10px;
+    transition: transform 0.3s ease, filter 0.3s ease; /* Agrega una transición suave */
+}
+
+.anime-2:hover {
+    transform: scale(1.1); /* Aumenta el tamaño de la imagen */
+    filter: brightness(1.2) drop-shadow(0 0 20px white); /* Ilumina y agrega luz blanca */
+    z-index: 2;
+    box-shadow: 0 0 40px 10px white; /* Luz blanca saliendo desde los lados */
+}
+
+/* Opaque and shrink other images when one is hovered */
+.anime-card:hover .anime-2 {
+    z-index: 2;
+    opacity: 1;
+    transform: scale(1.1);
+    filter: brightness(1.2) drop-shadow(0 0 20px white);
+    box-shadow: 0 0 40px 10px white;
+}
+
+.Anime-1:hover .anime-card:not(:hover) .anime-2 {
+    opacity: 0.5;
+    transform: scale(0.95);
+    filter: none;
+}
+
+.anime-title {
+    margin-top: 16px;
+    font-size: 1.8rem; /* Ajusta el tamaño del texto */
+    text-align: center;
+}

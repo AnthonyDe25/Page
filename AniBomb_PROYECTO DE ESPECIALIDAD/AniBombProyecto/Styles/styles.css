@@ -1,0 +1,144 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #bb8989;
+    color: rgb(253, 102, 102);
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+main {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+}
+
+.product {
+    border: 2.5px solid #f85757;
+    padding: 60px 60px 60px 60px;
+    width: 200px;
+    margin: 60px;
+    border-radius: 10px; /* Redondea los bordes con un radio de 10px */
+}
+
+.hidden {
+    display: none;
+}
+
+#cart-modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    border: 1px solid #ccc;
+    padding: 20px;
+    width: 300px;
+}
+
+#payment-message {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #ffffff;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    font-size: 18px;
+    text-align: center;
+    z-index: 1000;
+}
+
+.hidden {
+    display: none;
+}
+
+.header {
+    background-image: url("../Img/banner.jpeg");
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-size: 100% 100%;
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.product {
+    border: 2.5px solid #f85757;
+    width: 200px; /* Define el ancho del contenedor */
+    height: 300px; /* Define la altura del contenedor */
+    margin: 50px 80px 50px 100px; /* Ajusta el margen */
+    border-radius: 10px; /* Redondea los bordes */
+    overflow: hidden; /* Asegura que las imágenes no se salgan del contenedor */
+    display: flex;
+    flex-direction: column; /* Coloca el contenido en una columna */
+    align-items: center;
+    justify-content: space-between; /* Distribuye el contenido dentro del contenedor */
+    padding: 10px; /* Agrega espacio interno */
+}
+
+/* Estilos específicos para cada producto */
+#product-1 {
+background-image: url('https://i.pinimg.com/736x/b9/51/ed/b951ed558802d9a29cc6a6388a3e46bc.jpg');
+    background-size: cover;
+}
+
+.product:hover {
+    z-index: 2;
+    opacity: 1;
+    transform: scale(1.3);
+    filter: brightness(1.25) drop-shadow(0 0 20px rgb(0, 0, 0));
+    box-shadow: 0 0 40px 10px white;
+}
+
+#product-2 {
+    background-image: url('https://i.pinimg.com/736x/4d/28/39/4d2839c276c0f43cef24347fb363c82a.jpg'); 
+    background-size: cover;
+}
+
+#product-3 {
+    background-image: url('https://i.pinimg.com/736x/3d/0d/38/3d0d38905372bf284db34abc6d980d1b.jpg'); 
+    background-size: cover;
+}
+
+#product-4 {
+    background-image: url('https://i.pinimg.com/1200x/8b/6c/ae/8b6caedd990f985e1eb827df985b7f98.jpg'); 
+    background-size: cover;
+}
+
+.product h2, .product p {
+    margin: 0;
+    text-align: center;
+}
+
+.product-actions {
+    margin-top: auto; /* Empuja las acciones hacia la parte inferior del contenedor */
+    width: 100%; /* Asegura que las acciones ocupen todo el ancho */
+    text-align: center; /* Centra el botón */
+}
+
+.add-to-cart {
+    padding: 10px 20px; /* Ajusta el tamaño del botón */
+    border: 2.5px solid #f85757;
+    border-radius: 10px; /* Redondea los bordes del botón */
+    background-color: #fff; /* Define un color de fondo */
+    color: #f85757; /* Define el color del texto */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+}
+
+#cart-button {
+    width: 8rem;
+    position: relative;
+    margin-left: 70.5rem;
+    margin-top: 17.5rem;
+}
